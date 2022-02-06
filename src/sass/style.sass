@@ -5,7 +5,8 @@
 @import 'blocks/benefits'
 @import 'blocks/consultation'
 @import 'blocks/forms'
-@import 'blocks/_carousel'
+@import 'blocks/carousel'
+@import 'blocks/catalog'
 
 html
     font-family: 'Museo Sans'
@@ -23,9 +24,17 @@ html
         text-align: left
         color: #fff
 
+@media (max-width: 991px)
+    .label
+        &__left
+            text-align: center
+
 @media (max-width: 575px)
     .label
         font-size: 25px
+        &__left
+            font-size: 19px
+
 
 
 // @media (max-width: 1200px)

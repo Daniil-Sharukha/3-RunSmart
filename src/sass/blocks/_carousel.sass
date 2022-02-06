@@ -21,3 +21,20 @@
         img
             display: block
             margin: 0 auto
+@media (max-width: 1200px)
+    .carousel
+        padding: 80px 80px
+
+@media (max-width: 991px)
+    .carousel
+        &__inner
+            width: 500px
+        .prev , .next
+            display: none
+        .tns-item
+            img
+                width: 100%
+
+@media (max-width: 575px)
+    .carousel
+        padding: 20px 10px
