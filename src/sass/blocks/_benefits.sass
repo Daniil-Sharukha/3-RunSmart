@@ -10,6 +10,14 @@
         width: 247px
         text-align: center
         color: #0d0d0d
+        &_animation
+            // animation: heartbeat 1.5s ease infinite 
+            animation-name: heartbeat
+            animation-duration: 1.5s
+            animation-timing-function: ease
+            animation-iteration-count: infinite
+            &:hover
+                animation-play-state: paused 
         img
             display: block
             margin: 0 auto
@@ -24,7 +32,6 @@
         a
             color: $main-color
             text-decoration: underline
-
 @media (max-width: 991px)
     .benefits
         &__wrapper

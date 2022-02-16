@@ -84,4 +84,16 @@ validateForms('#consultation-form');
 validateForms('#consultation form');
 validateForms('#order form');
 
-$('input[name=phone]').mask("+7 (999) 999-99-99")
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+//smooth scroll and pageup
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+    } else {
+        $('.pageup').fadeOut();
+    }
+});
+
+//скрипты для воспроизведения анимации, когда она будт находиться в поле зрения
+new WOW().init();
